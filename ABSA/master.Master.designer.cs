@@ -31,24 +31,6 @@ namespace ABSA {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Email;
-        
-        /// <summary>
-        /// Password control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
-        
-        /// <summary>
         /// brand control.
         /// </summary>
         /// <remarks>
@@ -58,13 +40,13 @@ namespace ABSA {
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox brand;
         
         /// <summary>
-        /// submit control.
+        /// btnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit;
+        protected global::System.Web.UI.WebControls.Button btnLogin;
         
         /// <summary>
         /// modal_trigger2 control.
@@ -83,6 +65,15 @@ namespace ABSA {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox brand1;
+        
+        /// <summary>
+        /// btnRegister control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegister;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

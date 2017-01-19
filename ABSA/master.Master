@@ -146,13 +146,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="top-grids-left">
 					<div class="signin-form-grid">
 						<div  id="modal" class="signin-form main-agile popupContainer" style="display:none;">
-							<h2>SIGN IN</h2><span class="modal_close"><i class="fa fa-times"></i></span>
+                            <p style="text-align:right;"><span class="modal_close"><i class="fa fa-times "></i></span></p>
+							<h2>SIGN IN</h2>
 							<form id="signin" action="#" method="post">
-								<asp:TextBox Id="Email" placeholder="Email" runat="server"/>
-								<asp:TextBox ID="Password" placeholder="Password" required="" runat="server"/>	 
+								<input type="text" name="Email" placeholder="Email" required="" runat="server"/>
+								<input type="password" name="Password" placeholder="Password" required="" runat="server"/>	 
 								<input type="checkbox" id="brand" value="" runat="server"/>
 								<label for="brand" runat="server"><span></span> Remember me ?</label> 
-						        <asp:Button ID="submit" type="submit" runat="server" Text="SIGN IN" />
+						        <asp:Button ID="btnLogin" type="submit" runat="server" Text="SIGN IN" />
                               
                               
 								<div class="signin-agileits-bottom"> 
@@ -181,8 +182,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="top-grids-left">
 					<div class="signin-form-grid">
 						<div  id="modal2" class="signin-form main-agile popupContainer" style="display:none;">
-							
-							<h3>REGISTER</h3><span class="modal_close2"><i class="fa fa-times"></i></span>
+							<p style="text-align:right;"><span class="modal_close2"><i class="fa fa-times "></i></span></p>
+							<h3>REGISTER</h3>
 						<form id="register" action="#" method="post">
 							<input type="text" name="FirstName" placeholder="First Name" required="" runat="server"/>
                             <input type="text" name="LastName" placeholder="Last Name" required="" runat="server"/>
@@ -191,7 +192,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<input type="password" name="Password" placeholder="Password" required="" />
 							<input type="checkbox" id="brand1" value="" runat="server"/>
 							<label for="brand1"><span></span>I accept the terms of use</label>
-							<input type="submit" value="REGISTER" runat="server"/>
+							 <asp:Button ID="btnRegister" type="submit" runat="server" Text="REGISTER" />
 						</form>
 							
 						</div>

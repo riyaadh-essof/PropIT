@@ -19,23 +19,23 @@
 						<select id="country" onchange="change_country(this.value)" class="frm-field required">
 							<option value="null">Type of Seller</option>
 							<option value="null">Any</option>         
-							<option value="AX">Private</option>
-							<option value="AX">Bank Repo</option>
-							<option value="AX">Bank Private</option>
-							<option value="AX">Rental</option>
+							<option value="Private">Private</option>
+							<option value="Bank Repo">Bank Repo</option>
+							<option value="Bank Privat">Bank Private</option>
+							<option value="Rental">Rental</option>
 						</select>
 					<div class="section_room">
 						<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
 						<select id="country" onchange="change_country(this.value)" class="frm-field required">
 							<option value="null">Location</option>
 							<option value="null">Any</option>         
-							<option value="AX">Gauteng</option>
-							<option value="AX">Kwa-Zulu Natal</option>
-							<option value="AX">Eastern Cape</option>
-							<option value="AX">Western Cape</option>
-                            <option value="AX">Northern Cape</option>
-                            <option value="AX">Limpopo</option>
-                            <option value="AX">Free State</option>
+							<option value="Gauteng">Gauteng</option>
+							<option value="Kwa-Zulu Natal">Kwa-Zulu Natal</option>
+							<option value="Eastern Cape">Eastern Cape</option>
+							<option value="Western Cape">Western Cape</option>
+                            <option value="Northern Cape">Northern Cape</option>
+                            <option value="Limpopo">Limpopo</option>
+                            <option value="Free State">Free State</option>
 						</select>
 					</div>	
 					<div class="section_room">
@@ -43,17 +43,17 @@
 						<select id="country1" onchange="change_country(this.value)" class="frm-field required">
 							<option value="null">Type of property</option>
 							<option value="null">Any</option>         
-							<option value="AX">Cluster</option>
-							<option value="AX">Duet</option>
-							<option value="AX">Duplex</option>
-							<option value="AX">Flat/Apartment</option>
-                            <option value="AX">House</option>         
-							<option value="AX">Simplex</option>
-							<option value="AX">Retirement Home</option>
-							<option value="AX">Kand</option>
-							<option value="AX">Farm/Small Holding</option>
-                            <option value="AX">Sec Title</option>         
-							<option value="AX">Guest House</option>
+							<option value="Cluster">Cluster</option>
+							<option value="Duet">Duet</option>
+							<option value="Duplex">Duplex</option>
+							<option value="Flat/Apartment">Flat/Apartment</option>
+                            <option value="House">House</option>         
+							<option value="Simplex">Simplex</option>
+							<option value="Retirement Home">Retirement Home</option>
+							<option value="Land">Land</option>
+							<option value="Farm/Small Holding">Farm/Small Holding</option>
+                            <option value="Sec Title">Sec Title</option>         
+							<option value="Guest House">Guest House</option>
 							
 						</select>
 					</div>
@@ -64,11 +64,11 @@
 								<select id="country2" onchange="change_country(this.value)" class="frm-field required">
 									<option value="null">Bedrooms</option>
                                     	<option value="null">Any</option>
-									<option value="AX">1</option>         
-									<option value="AX">2</option>
-									<option value="AX">3</option>
-									<option value="AX">4</option>
-									<option value="AX">More</option>
+									<option value="1">1</option>         
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value=">4">More than 4</option>
 								</select>
 							</div>
 						</div>
@@ -77,11 +77,12 @@
 								<span class="bath"></span>
 								<select id="country3" onchange="change_country(this.value)" class="frm-field required">
 									<option value="null">Baths</option>
-									<option value="null">Any</option>         
-									<option value="AX">2</option>
-									<option value="AX">3</option>
-									<option value="AX">4</option>
-									<option value="AX">More</option>
+                                    <option value="null">Any</option>
+									<option value="1">1</option>         
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value=">4">More than 4</option>
 								</select>
 							</div>
 						</div>

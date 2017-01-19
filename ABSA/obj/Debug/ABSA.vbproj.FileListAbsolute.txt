@@ -1,0 +1,48 @@
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\ApplicationInsights.config
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\csc.exe
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\System.Collections.Immutable.dll
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\vbc.exe
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\VBCSCompiler.exe
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\roslyn\VBCSCompiler.exe.config
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\ABSA.dll.config
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\ABSA.dll
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\ABSA.pdb
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\ABSA.xml
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\obj\Debug\ABSA.vbprojResolveAssemblyReference.cache
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\obj\Debug\ABSA.Resources.resources
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\obj\Debug\ABSA.vbproj.GenerateResource.Cache
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\obj\Debug\ABSA.dll
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\obj\Debug\ABSA.xml
+c:\users\zayd\documents\visual studio 2015\Projects\ABSA\ABSA\obj\Debug\ABSA.pdb
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\csc.exe
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\vbc.exe
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\VBCSCompiler.exe
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\ABSA.dll.config
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\ABSA.dll
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\ABSA.pdb
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\ABSA.xml
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Riyaadh\Documents\propIT\ABSA\obj\Debug\ABSA.vbprojResolveAssemblyReference.cache
+C:\Users\Riyaadh\Documents\propIT\ABSA\obj\Debug\ABSA.Resources.resources
+C:\Users\Riyaadh\Documents\propIT\ABSA\obj\Debug\ABSA.vbproj.GenerateResource.Cache
+C:\Users\Riyaadh\Documents\propIT\ABSA\obj\Debug\ABSA.dll
+C:\Users\Riyaadh\Documents\propIT\ABSA\obj\Debug\ABSA.xml
+C:\Users\Riyaadh\Documents\propIT\ABSA\obj\Debug\ABSA.pdb
+C:\Users\Riyaadh\Documents\propIT\ABSA\bin\js\ApplicationInsights.config

@@ -1,0 +1,228 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.Master.cs" Inherits="ABSA.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ABSA Property | Home</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Plottage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+
+<link href='//fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'/>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'/>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- header -->
+	<div class="header">	
+		<div class="header-top">
+           
+			<div class="container"> 
+				<div class="header-top-left">
+					<ul>
+						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+270000000</li>
+						<li><a href="mailto:info@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>property@absa.co.za</a></li>
+					</ul>
+				</div>
+				<div class="header-top-left1">
+					<ul class="social-icons">
+						<li><a href="#" class="icon icon-border facebook"></a></li>
+						
+						<li><a href="#" class="icon icon-border instagram"></a></li>
+						
+					</ul>
+				</div>
+				<div class="header-top-right">
+					<div class="search">
+						<input class="search_box" type="checkbox" id="search_box"/>
+						<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+						<div class="search_form">
+							<form action="#" method="post">
+								<input type="text" name="Search" placeholder="Search..."/>
+								<input type="submit" value=" "/>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<div class="logo">
+							<h1><a class="navbar-brand" href="Home.aspx">ABSA<span>Real Estate</span></a></h1>
+						</div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<nav>
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="Home.aspx">Home</a></li>
+								<li><a href="HelpUSell.aspx" class="hvr-bounce-to-bottom">Absa Help Us Sell</a></li>
+								<li><a href="Prop.aspx" class="hvr-bounce-to-bottom">Absa Properties</a></li>
+								<li><a href="FAQ.aspx" class="hvr-bounce-to-bottom">FAQ's</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+	</div>
+<!-- //header -->
+    <div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <!-- footer -->
+	<div class="footer">
+		<div class="container">
+			
+			<div class="footer-grids">
+                <div class="col-md-2 footer-grid" style="font-size:12px">
+					<ul>
+						<li><a href="mail.html">Contact Us</a></li>
+						<li><a href="index.html">Security Estates</a></li>
+						<li><a href="index.html">About Us</a></li>
+                        <li><a href="index.html">Privacy Policy</a></li>
+                        <li><a href="index.html">Terms and Conditions</a></li>
+                        <li><a href="index.html">Site Map</a></li>
+                        <li><a href="index.html">Property for Sale By Suburb</a></li>
+
+					</ul>
+				</div>
+				
+				<div class="col-md-3 footer-grid">
+					<div class="footer-grid1">
+						<div class="footer-grid1-left">
+							<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive"/></a>
+						</div>
+						<div class="footer-grid1-right">
+							<a href="single.html">Property 1</a>
+							<div class="m1">
+								<a href="single.html"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></a>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="footer-grid1">
+						<div class="footer-grid1-left">
+							<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive"/></a>
+						</div>
+						<div class="footer-grid1-right">
+							<a href="single.html">Property 2</a>
+							<div class="m1">
+								<a href="single.html"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></a>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="footer-grid1">
+						<div class="footer-grid1-left">
+							<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive"/></a>
+						</div>
+						<div class="footer-grid1-right">
+							<a href="single.html">Property 3</a>
+							<div class="m1">
+								<a href="single.html"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></a>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<div class="footer-grid-instagram">
+						<a href="single.html"><img src="images/9.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-instagram">
+						<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-instagram">
+						<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-instagram">
+						<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="clearfix"> </div>
+				
+			</div>
+            <div class="col-md-4 footer-grid">
+                
+					<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Johannesburg, South Africa</p>
+					<p><a href="mailto:contact@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> property@absa.co.za</a></p>
+					<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+27000000</p>
+				</div>
+				</div>
+				<div class="clearfix"> </div>
+			<div class="footer-copy">
+				<p>© 2016 ABSA Ltd. All rights reserved</p>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+    </form>
+</body>
+</html>

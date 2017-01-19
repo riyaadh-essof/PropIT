@@ -41,6 +41,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+
+    
+    <script type="text/javascript" src="js2/jquery-1.11.0.min.js"></script>
+    <script src="js2/jquery.leanModal.min.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="css2/style.css" />
+
+
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Different Multiple Form Widget template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css3/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- font-awesome icons -->
+<link href="css3/font-awesome.css" rel="stylesheet"/> 
+<!-- //font-awesome icons -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"/>
+<!-- //web font -->
+
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -102,12 +127,114 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="HelpUSell.aspx" class="hvr-bounce-to-bottom">Absa Help Us Sell</a></li>
 								<li><a href="Prop.aspx" class="hvr-bounce-to-bottom">Absa Properties</a></li>
 								<li><a href="FAQ.aspx" class="hvr-bounce-to-bottom">FAQ's</a></li>
+                                <li><a id="modal_trigger" href="#modal" class="hvr-bounce-to-bottom modal_close2">Login</a></li>
 							</ul>
 						</nav>
 					</div>
+
+
 					<!-- /.navbar-collapse -->
 				</nav>
 			</div>
+            
+ 
+		
+	
+    <section id="SigninModal" class="popupBody" >
+      	
+	
+				<div class="top-grids-left">
+					<div class="signin-form-grid">
+						<div  id="modal" class="signin-form main-agile popupContainer" style="display:none;">
+							<h2>SIGN IN</h2><span class="modal_close"><i class="fa fa-times"></i></span>
+							<form id="signin" action="#" method="post">
+								<asp:TextBox Id="Email" placeholder="Email" runat="server"/>
+								<asp:TextBox ID="Password" placeholder="Password" required="" runat="server"/>	 
+								<input type="checkbox" id="brand" value="" runat="server"/>
+								<label for="brand" runat="server"><span></span> Remember me ?</label> 
+						        <asp:Button ID="submit" type="submit" runat="server" Text="SIGN IN" />
+                              
+                              
+								<div class="signin-agileits-bottom"> 
+									<p><a href="#">Forgot Password ?</a></p>    
+                                    <p><a class="modal_close" id="modal_trigger2" href="#modal2" runat="server" onclick="">Register </a></p> 
+                                      
+								</div> 
+							</form>
+						</div>
+						
+					</div>
+					</div>
+                </div>
+			</div>
+	
+	<!-- //main --> 
+
+    </section>
+
+
+
+        
+    <section class="popupBody">
+      	
+	
+				<div class="top-grids-left">
+					<div class="signin-form-grid">
+						<div  id="modal2" class="signin-form main-agile popupContainer" style="display:none;">
+							
+							<h3>REGISTER</h3><span class="modal_close2"><i class="fa fa-times"></i></span>
+						<form id="register" action="#" method="post">
+							<input type="text" name="FirstName" placeholder="First Name" required="" runat="server"/>
+                            <input type="text" name="LastName" placeholder="Last Name" required="" runat="server"/>
+                             <input type="text" name="Contact" placeholder="Contact Number" required="" runat="server"/>
+							<input type="email" name="Email" placeholder="Your Email" required="" runat="server"/>
+							<input type="password" name="Password" placeholder="Password" required="" />
+							<input type="checkbox" id="brand1" value="" runat="server"/>
+							<label for="brand1"><span></span>I accept the terms of use</label>
+							<input type="submit" value="REGISTER" runat="server"/>
+						</form>
+							
+						</div>
+						
+					</div>
+					</div>
+                
+	<!-- //main --> 
+
+    </section>
+
+        <script type="text/javascript">
+            $("#modal_trigger").leanModal({ top: 200, overlay: 0.6, closeButton: ".modal_close" });
+            $("#modal_trigger2").leanModal({ top: 200, overlay: 0.6, closeButton: ".modal_close2" });
+
+	$(function(){
+		// Calling Login Form
+		$("#login_form").click(function(){
+			$(".social_login").hide();
+			$(".user_login").show();
+			return false;
+		});
+
+		// Calling Register Form
+		$("#modal_trigger2").click(function () {
+		   
+			$(".social_login").hide();
+			$(".user_register").show();
+			$(".header_title").text('Register');
+			return false;
+		});
+
+		// Going back to Social Forms
+		$(".back_btn").click(function(){
+			$(".user_login").hide();
+			$(".user_register").hide();
+			$(".social_login").show();
+			$(".header_title").text('Login');
+			return false;
+		});
+
+	})
+</script>
 		</div>
 	</div>
 <!-- //header -->

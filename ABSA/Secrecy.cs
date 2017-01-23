@@ -5,7 +5,7 @@ using System.Web;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace IFM2B10_2014_CS_Paper_B
+namespace ABSA
 {
     public static class Secrecy
     {

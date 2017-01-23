@@ -5,7 +5,6 @@
       <xs:sequence>
         <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="sEmail" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -13,7 +12,6 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="LoginResult" type="xs:boolean" />
-        <xs:element minOccurs="0" name="sEmail" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -31,7 +29,9 @@
   </xs:element>
   <xs:element name="RegisterResponse">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegisterResult" nillable="true" type="xs:string" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

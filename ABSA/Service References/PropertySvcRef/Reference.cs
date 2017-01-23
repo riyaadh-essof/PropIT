@@ -16,61 +16,16 @@ namespace ABSA.PropertySvcRef {
     public interface IProperty {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProperty/Login", ReplyAction="http://tempuri.org/IProperty/LoginResponse")]
-        ABSA.PropertySvcRef.LoginResponse Login(ABSA.PropertySvcRef.LoginRequest request);
+        bool Login(string email, string password);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProperty/Login", ReplyAction="http://tempuri.org/IProperty/LoginResponse")]
-        System.Threading.Tasks.Task<ABSA.PropertySvcRef.LoginResponse> LoginAsync(ABSA.PropertySvcRef.LoginRequest request);
+        System.Threading.Tasks.Task<bool> LoginAsync(string email, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProperty/Register", ReplyAction="http://tempuri.org/IProperty/RegisterResponse")]
-        void Register(string name, string surname, string email, string password, string type, string contact);
+        string Register(string name, string surname, string email, string password, string type, string contact);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProperty/Register", ReplyAction="http://tempuri.org/IProperty/RegisterResponse")]
-        System.Threading.Tasks.Task RegisterAsync(string name, string surname, string email, string password, string type, string contact);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Login", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class LoginRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string email;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        public string password;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
-        public string sEmail;
-        
-        public LoginRequest() {
-        }
-        
-        public LoginRequest(string email, string password, string sEmail) {
-            this.email = email;
-            this.password = password;
-            this.sEmail = sEmail;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="LoginResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class LoginResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public bool LoginResult;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        public string sEmail;
-        
-        public LoginResponse() {
-        }
-        
-        public LoginResponse(bool LoginResult, string sEmail) {
-            this.LoginResult = LoginResult;
-            this.sEmail = sEmail;
-        }
+        System.Threading.Tasks.Task<string> RegisterAsync(string name, string surname, string email, string password, string type, string contact);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -100,30 +55,19 @@ namespace ABSA.PropertySvcRef {
                 base(binding, remoteAddress) {
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ABSA.PropertySvcRef.LoginResponse ABSA.PropertySvcRef.IProperty.Login(ABSA.PropertySvcRef.LoginRequest request) {
-            return base.Channel.Login(request);
+        public bool Login(string email, string password) {
+            return base.Channel.Login(email, password);
         }
         
-        public bool Login(string email, string password, ref string sEmail) {
-            ABSA.PropertySvcRef.LoginRequest inValue = new ABSA.PropertySvcRef.LoginRequest();
-            inValue.email = email;
-            inValue.password = password;
-            inValue.sEmail = sEmail;
-            ABSA.PropertySvcRef.LoginResponse retVal = ((ABSA.PropertySvcRef.IProperty)(this)).Login(inValue);
-            sEmail = retVal.sEmail;
-            return retVal.LoginResult;
+        public System.Threading.Tasks.Task<bool> LoginAsync(string email, string password) {
+            return base.Channel.LoginAsync(email, password);
         }
         
-        public System.Threading.Tasks.Task<ABSA.PropertySvcRef.LoginResponse> LoginAsync(ABSA.PropertySvcRef.LoginRequest request) {
-            return base.Channel.LoginAsync(request);
+        public string Register(string name, string surname, string email, string password, string type, string contact) {
+            return base.Channel.Register(name, surname, email, password, type, contact);
         }
         
-        public void Register(string name, string surname, string email, string password, string type, string contact) {
-            base.Channel.Register(name, surname, email, password, type, contact);
-        }
-        
-        public System.Threading.Tasks.Task RegisterAsync(string name, string surname, string email, string password, string type, string contact) {
+        public System.Threading.Tasks.Task<string> RegisterAsync(string name, string surname, string email, string password, string type, string contact) {
             return base.Channel.RegisterAsync(name, surname, email, password, type, contact);
         }
     }

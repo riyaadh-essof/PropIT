@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -185,9 +186,6 @@
     <Content Include="obj\Debug\ABSA.vbprojResolveAssemblyReference.cache" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="Register.aspx" />
-    <Content Include="Service References\PropertySvcRef\ABSA.PropertySvcRef.LoginResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <None Include="Service References\PropertySvcRef\Property.wsdl" />
     <None Include="Service References\PropertySvcRef\Property.xsd">
       <SubType>Designer</SubType>

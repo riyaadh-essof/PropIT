@@ -30,6 +30,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Button ID="btn"  text="hello" runat="server" />
   <div class='row'>
      <div class='col-md-4'>
       <div class="single">

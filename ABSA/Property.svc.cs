@@ -13,28 +13,26 @@ namespace ABSA
     // NOTE: In order to launch WCF Test Client for testing this service, please select Property.svc or Property.svc.cs at the Solution Explorer and start debugging.
     public class Property : IProperty
     {
-        public bool Login(string email, string password, ref string sEmail)
-        {
-            SqlConnection connection;
+        SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Riyaadh\\Desktop\\propIT\\ABSA\\App_Data\\Property.mdf;Integrated Security=True");
+        /*
+        *Login function, checks if email and password are in the database
+        *Needs to be refined
+        */
+        public bool Login(string email, string password)
+        { 
             SqlCommand command;
             SqlDataReader reader;
 
-            connection = new SqlConnection();
             command = new SqlCommand("Select * From [Users] Where Email=@email AND Password=@pass", connection);
-
-            command.Parameters.AddWithValue("@email", email);
-            command.Parameters.AddWithValue("@pass", password);
             command.CommandType = CommandType.Text;
             command.Connection.Open();
 
+            command.Parameters.AddWithValue("@email", email);
+            command.Parameters.AddWithValue("@pass", password);
+            
             reader = command.ExecuteReader();
             if (reader.HasRows)
             {
-                while (reader.Read())
-                {
-                    sEmail = reader["Email"].ToString();
-                }
-
                 command.Dispose();
                 connection.Close();
                 return true;
@@ -45,18 +43,18 @@ namespace ABSA
                 connection.Close();
                 return false;
             }
-     
         }
 
+        /**
+        *Register function, adds user details to database
+        */
         public void Register(string name, string surname, string email, string password, string type, string contact)
         {
-            SqlConnection connection;
             SqlCommand command;
 
-            connection = new SqlConnection();
-            command = new SqlCommand("INSERT INTO [Users] VALUES(@name, @surname, @contact, @type, @email, @password)", connection);
-
+            command = new SqlCommand("INSERT INTO Users VALUES(@name, @surname, @contact, @type, @email, @password)", connection);
             command.CommandType = CommandType.Text;
+            command.Connection.Open();
 
             command.Parameters.AddWithValue("@name", name);
             command.Parameters.AddWithValue("@surname", surname);
@@ -65,9 +63,36 @@ namespace ABSA
             command.Parameters.AddWithValue("@email", email);
             command.Parameters.AddWithValue("@password", password);
 
-            command.Connection.Open();
-            command.ExecuteNonQuery();
+            try {
+                 command.ExecuteNonQuery();
+             }
+             catch (SqlException ex)
+             {
+                 throw ex;
+             }
+            connection.Close();
             command.Connection.Dispose();
+        }
+
+        public void addProperty(string address, string suburb, string town, string city, string province, string postalCode,
+            int rooms, int lounge, int Garage, int Kitchen, int erfSize, int Bathroom, string type, string status,
+            int dateListed, int age, string description, string floorPlan, string sellerType, float price, float highestBid, string image)
+        {
+            SqlCommand command;
+
+            command = new SqlCommand(@"Insert Into [Property] Values(@address, @suburb, @town, @city, @province, @postalCode, @rooms,
+                @lounge, @garage, @kitchen, @erfSize, @bathroom, @type, @status, @dateListed, @age, @description, @floorPlan, 
+                @sellerType, @price, @highestBid", connection);
+
+            command.CommandType = CommandType.Text;
+            command.Connection.Open();
+
+            command.Parameters.AddWithValue("@address", address);
+            command.Parameters.AddWithValue("@suburb", suburb);
+            command.Parameters.AddWithValue("@town", town);
+            command.Parameters.AddWithValue("@city", city);
+            command.Parameters.AddWithValue("@province", province);
+
         }
     }
 }

@@ -34,7 +34,6 @@ C:\Users\Riyaadh\Desktop\propIT\ABSA\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Riyaadh\Desktop\propIT\ABSA\bin\ABSA.dll.config
 C:\Users\Riyaadh\Desktop\propIT\ABSA\bin\ABSA.dll
 C:\Users\Riyaadh\Desktop\propIT\ABSA\bin\ABSA.pdb
-C:\Users\Riyaadh\Desktop\propIT\ABSA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Riyaadh\Desktop\propIT\ABSA\obj\Debug\ABSA.csprojResolveAssemblyReference.cache
 C:\Users\Riyaadh\Desktop\propIT\ABSA\obj\Debug\ABSA.My_Project.Resources.resources
 C:\Users\Riyaadh\Desktop\propIT\ABSA\obj\Debug\ABSA.csproj.GenerateResource.Cache

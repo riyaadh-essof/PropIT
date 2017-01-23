@@ -13,5 +13,10 @@ namespace ABSA
         {
 
         }
+
+        protected void btn_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Home.aspx");
+        }
     }
 }
